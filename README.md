@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Blogify
+Blogify is a blog website that I created for Challenge Test.
 
-## Getting Started
+Feature that the website has:
+- Display Blog list
+- Display Detail Blog
+- Display my profila page
+- Update Detail Profile
+- Create a Blog
+- Delete a Blog
+- Mencari User lain
 
-First, run the development server:
+Deployed Link : https://synapsis-test.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+Tech stack for build this website: 
+1. Next.Js
+2. Tailwind Css
+3. Typescript
+4. REST API Public dari: https://gorest.co.in/
+5. Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The following is the website pages:
+### 1. Home Page
+![image](https://github.com/FaisalABR/test/assets/93419758/c17d5acf-5ec5-4abf-8c5d-7d72d08b83bb)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Detail Blog Page
+![image](https://github.com/FaisalABR/test/assets/93419758/f1fd240a-4a35-40c9-81c7-63c3d0a14e23)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. My Profile Page
+![image](https://github.com/FaisalABR/test/assets/93419758/9b030b7d-7d34-46d0-a615-74919af8b19b)
 
-## Learn More
+### 4. Create Blog Page
+![image](https://github.com/FaisalABR/test/assets/93419758/5fd15644-10e7-4fab-8137-f78f03e3e553)
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Edit Profile Page
+![image](https://github.com/FaisalABR/test/assets/93419758/9c56b3d5-cc61-4740-a93d-8ec39338c210)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 6. Search User Page
+![image](https://github.com/FaisalABR/test/assets/93419758/c756ffa8-d158-49a1-847f-6492afd97772)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
