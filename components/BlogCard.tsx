@@ -1,12 +1,6 @@
 import { getUser } from "@/app/lib/api/users";
+import { BlogCardTypes } from "@/app/lib/definitions";
 import Link from "next/link";
-
-export interface BlogCardTypes {
-  id?: number;
-  title: string;
-  body: string;
-  user_id: number;
-}
 
 const BlogCard = async ({ id, title, body, user_id }: BlogCardTypes) => {
   const user = await getUser(user_id);
@@ -34,7 +28,7 @@ const BlogCard = async ({ id, title, body, user_id }: BlogCardTypes) => {
         {body}
       </p>
       <Link href={`/posts/${id}`}>
-        <button className="px-3 py-2 transition bg-gradient-to-br hover:bg-gradient-to-tl from-purple-700 via-violet-600 to-orange-400 font-bold text-white rounded-md cursor-pointer text-xs md:text-sm">
+        <button className="px-3 py-2  bg-gradient-to-br  from-purple-700 via-violet-600 to-orange-400 font-bold text-white rounded-md cursor-pointer text-xs md:text-sm">
           Details
         </button>
       </Link>
