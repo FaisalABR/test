@@ -4,7 +4,11 @@ import { createPost, editUser } from "./api/users";
 import { createComment, removePost } from "./api/post";
 
 export const addPost = async (id: number, title: string, body: string) => {
-  await createPost(id, title, body);
+  try {
+    await createPost(id, title, body);
+  } catch (error) {
+    console.log(error);
+  }
   revalidatePath("/user");
 };
 
@@ -14,12 +18,20 @@ export const updateProfile = async (
   gender: string,
   status: string
 ) => {
-  await editUser(id, name, gender, status);
+  try {
+    await editUser(id, name, gender, status);
+  } catch (error) {
+    console.log(error);
+  }
   revalidatePath("/user");
 };
 
 export const delPost = async (id: number) => {
-  const remove = await removePost(id);
+  try {
+    const remove = await removePost(id);
+  } catch (error) {
+    console.log(error);
+  }
   revalidatePath("/users");
 };
 
